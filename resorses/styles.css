@@ -1,0 +1,56 @@
+:root {
+    --Color-text-text: #303030;
+    --Color-bg: #F1F1F1;
+    --Color-border-border: #E3E3E3;
+    --Color-bg-table-header: #FFFFFF;
+    --Color-border-header: #E0E0E0;
+    --Height-table-row: 44px;
+    --Font-table: 14px;
+}
+
+body {
+    background-color: var(--Color-bg);
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.table_1, .table_2 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table_1 th {
+    padding: 12px;
+    background-color: var(--Color-bg-table-header);
+    font-size: var(--Font-table);
+    font-weight: 500;
+    text-align: left;
+    border-bottom: 2px solid var(--Color-border-header);
+}
+
+.table_1 th:not(:first-child) {
+    border-left: 1px solid var(--Color-border-header);
+}
+
+.table_2 td {
+    padding: 10px;
+    border-bottom: 1px solid var(--Color-border-border);
+}
+
+.table_2 .status {
+    color: var(--Color-text-text);
+}
+
+.delete-icon img {
+    width: 20px;
+    height: 20px;
+}
