@@ -26,6 +26,8 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .table_1 th {
@@ -44,10 +46,12 @@ body {
 .table_2 td {
     padding: 10px;
     border-bottom: 1px solid var(--Color-border-border);
+    background-color: var(--Color-bg-table-header);
 }
 
 .table_2 .status {
     color: var(--Color-text-text);
+    border-left: 1px solid var(--Color-border-header);
 }
 
 .delete-icon img {
