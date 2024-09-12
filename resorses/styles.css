@@ -39,22 +39,31 @@ body {
     border-bottom: 2px solid var(--Color-border-header);
 }
 
-.table_1 th:not(:first-child) {
-    border-left: 1px solid var(--Color-border-header);
-}
-
 .table_2 td {
     padding: 10px;
     border-bottom: 1px solid var(--Color-border-border);
     background-color: var(--Color-bg-table-header);
 }
 
-.table_2 .status {
+.table_2 .status{
     color: var(--Color-text-text);
-    border-left: 1px solid var(--Color-border-header);
 }
 
 .delete-icon img {
     width: 20px;
     height: 20px;
+}
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.status.draft {
+    background-color: #f4f4f4;
+    color: #777;
+}
+
+.status.active {
+    background-color: #c8f7c5;
+    color: green;
 }
