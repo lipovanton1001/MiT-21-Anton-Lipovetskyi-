@@ -40,30 +40,33 @@ body {
 }
 
 .table_2 td {
-    padding: 10px;
+    padding: 15px;
     border-bottom: 1px solid var(--Color-border-border);
     background-color: var(--Color-bg-table-header);
+    
 }
 
 .table_2 .status{
     color: var(--Color-text-text);
+    text-align: left;
+
 }
 
 .delete-icon img {
     width: 20px;
     height: 20px;
 }
-.status {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
-.status.draft {
-    background-color: #f4f4f4;
-    color: #777;
-}
-
-.status.active {
+.status_div_active {
+    padding: 2px 30px;
+    border-radius: 40px;
     background-color: #c8f7c5;
     color: green;
+    width: 100px;
+}
+.status_div_draft{
+    padding: 2px 30px;
+    border-radius: 40px;
+    background-color: #f4f4f4;
+    color: #777;
+    width: 100px;
 }
